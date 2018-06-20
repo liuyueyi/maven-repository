@@ -19,7 +19,7 @@ deployFunc(){
   git checkout $br
   cd $CURRENT_PATH
   # 开始deploy
-  mvn clean deploy -Dmaven.test.skip  -DaltDeploymentRepository=self-mvn-repo::default::file:/Users/yihui/GitHub/maven-repository/repository
+  mvn clean deploy -Dmaven.test.skip  -DaltDeploymentRepository=self-mvn-repo::default::file:/Users/user/Project/GitHub/maven-repository/repository
 
   # deploy 完成,提交
   cd $DEPLOY_PATH
