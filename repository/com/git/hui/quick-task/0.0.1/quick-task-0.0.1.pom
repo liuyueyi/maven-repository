@@ -6,19 +6,12 @@
 
     <groupId>com.git.hui</groupId>
     <artifactId>quick-task</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
+    <modules>
+        <module>task-core</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -41,11 +34,20 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>2.4.3</version>
-        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
