@@ -11,7 +11,19 @@
 
     <modules>
         <module>task-core</module>
+        <module>task-websocket-plugin</module>
+        <module>task-api</module>
     </modules>
+
+    <description>一个简单的动态脚本调度框架，支持运行时，实时增加,删除和修改动态脚本，可用于后端的进行接口验证、数据订正，执行定时任务或校验脚本</description>
+    <url>https://github.com/liuyueyi/quick-task</url>
+
+    <properties>
+        <base-version>0.0.1</base-version>
+        <task-api.version>0.0.1</task-api.version>
+        <task-core.version>0.0.1</task-core.version>
+        <task-websocket-plugin.version>0.0.1</task-websocket-plugin.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -37,6 +49,26 @@
 
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.git.hui</groupId>
+                <artifactId>task-api</artifactId>
+                <version>${task-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.git.hui</groupId>
+                <artifactId>task-core</artifactId>
+                <version>${task-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.git.hui</groupId>
+                <artifactId>task-websocket-plugin</artifactId>
+                <version>${task-websocket-plugin.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -49,5 +81,14 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <developers>
+        <developer>
+            <name>YiHui - 一灰灰blog</name>
+            <url>https://github.com/liuyueyi</url>
+            <email>bangzewu@126.com</email>
+        </developer>
+    </developers>
 
 </project>
