@@ -3,11 +3,12 @@
   <groupId>com.hust.hui.alarm</groupId>
   <artifactId>core</artifactId>
   <versioning>
-    <release>0.1</release>
+    <release>1.0</release>
     <versions>
       <version>1.0-SNAPSHOT</version>
       <version>0.1</version>
+      <version>1.0</version>
     </versions>
-    <lastUpdated>20180728115501</lastUpdated>
+    <lastUpdated>20191225120613</lastUpdated>
   </versioning>
 </metadata>
