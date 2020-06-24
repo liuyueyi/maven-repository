@@ -7,8 +7,8 @@
     <artifactId>quick-media</artifactId>
     <version>1.1</version>
     <modules>
-        <module>web</module>
         <module>plugins</module>
+        <module>console</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -41,6 +41,14 @@
                         <format>xml</format>
                     </formats>
                     <check />
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
