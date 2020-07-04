@@ -3,7 +3,7 @@
   <groupId>com.github.hui.media</groupId>
   <artifactId>qrcode-plugin</artifactId>
   <versioning>
-    <release>2.4.1</release>
+    <release>2.4.2</release>
     <versions>
       <version>1.0</version>
       <version>1.0.1</version>
@@ -15,7 +15,8 @@
       <version>2.3</version>
       <version>2.4</version>
       <version>2.4.1</version>
+      <version>2.4.2</version>
     </versions>
-    <lastUpdated>20200629012023</lastUpdated>
+    <lastUpdated>20200704030909</lastUpdated>
   </versioning>
 </metadata>
